@@ -5,6 +5,9 @@ class ChallengesController < ApplicationController
   # GET /challenges.json
   def index
     @challenges = Challenge.all
+    logger.debug "======"
+    logger.debug "Un debug"
+    logger.debug "======"
   end
 
   # GET /challenges/1
